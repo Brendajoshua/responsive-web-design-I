@@ -65,6 +65,8 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* For desktop: */
+@media only screen and (min-width: 800px) {
 .parent-container{
 	display: flex;
 	width: 900px;
@@ -74,113 +76,234 @@ h1, h2, h3, h4, h5 {
 	padding: 50px;
 	flex-direction: column;
 	border: 1px solid red;
+}
 
-}
-.header{
-	display: flex;
-	flex-direction: row;
-    margin: 10px;
-    text-align: center;
-    font-size: 30px;
-
-}
-.nav{
-	display: flex;
-    flex-flow: row wrap;
-	justify-content: space-between;
-	display: block;
-    text-align: center;
-    padding: 10px 12px;
-	text-decoration: none;
-	font-size: 25px;
-}
-.header-image{
-display: flexbox;
-align-items: flex-end;
-}
-.container1{
-	display: flexbox;
-	flex-direction: row;
-}
-.image1{
+.navcontainer {
+    display: flex;
+    flex-direction: row;
 	width: 100%;
-	margin: 5px;
 }
 	
-.container2{
+.navcontainer nav a{
+	color: black;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 25px 0;
+}
+.navcontainer nav{
+	padding: 20px 0;
+}
+.image-class {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: left;
+    align-self: left;
+    margin-left: 0;
+    margin-right: 5%;
+    width: 30%;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: right;
+    align-items: center;
+    width: calc(100% - 157px);
+  }
+  .image-container{
+	  display: flex;
+	  flex-wrap: wrap;
+	  flex-direction: row;
+	  justify-content: space-evenly;
+	  margin: 15px;
+
+  }
+  
+
+  .heading{
+	  display: flex;
+		font-size: 50px;
+		font-style: oblique;
+		justify-content: left;
+		width: 40%;	
+  }
+  .top-image{
+	  display: flex;
+	  width: 40%;
+  }
+  
+  .section1{
 	display: flex;
-	flex-direction: row;
-	border-bottom: solid black;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: left and right;
-	
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+	border-top: 1px solid black;
+  }
+
+  .section1 .text-container {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
 }
-.section1{
-margin: 5px;
-width: 45%;	
-border: solid black;
-padding: 5px;
+.middle-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: left;
+    align-self: left;
+    margin-left: 0;
+    margin-right: 5%;
+	width: 100%;
 }
 .section2{
-	margin: 5px;
-	width: 45%;	
-	border: solid black;
-	padding: 5px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px;
+	border-bottom: 1px solid black;
+  }
+  .section2 .text-container2 {
+    width: 32%;
+    padding: 0 1%;
+    padding-bottom: 20px;  
+}
+.section3{
+	display: flex;
+	flex-direction: row;
+    justify-content: flex-start;
+	margin: 20px;
+}
+.section3 .p3{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+}
+					
+}
+
+@media only screen and (min-width: 600px) {
+	.parent-container{
+		display: flex;
+		width: 900px;
+		margin: auto;
+		align-items: center;
+		align-content: center;
+		padding: 50px;
+		flex-direction: column;
+		border: 1px solid red;
+	}
+	
+	.navcontainer {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+		
+	.navcontainer nav a{
+		color: black;
+		text-decoration: none;
+		font-size: 14px;
+		padding: 25px 0;
+	}
+	.navcontainer nav{
+		padding: 20px 0;
+	}
+	.image-class {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-content: left;
+		align-self: left;
+		margin-left: 0;
+		margin-right: 5%;
+		width: 30%;
+	  }
+	  .nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-self: right;
+		align-items: center;
+		width: calc(100% - 157px);
+	  }
+	  .image-container{
+		  display: flex;
+		  flex-wrap: wrap;
+		  flex-direction: row;
+		  justify-content: space-evenly;
+		  margin: 15px;
+	
+	  }
+	  
+	
+	  .heading{
+		  display: flex;
+			font-size: 50px;
+			font-style: oblique;
+			justify-content: left;
+			width: 40%;	
+	  }
+	  .top-image{
+		  display: flex;
+		  width: 40%;
+	  }
+	  
+	  .section1{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		margin: 20px;
+		border-top: 1px solid black;
+	  }
+	
+	  .section1 .text-container {
+		width: 48%;
+		padding: 0 1%;
+		padding-bottom: 20px;  
+	}
+	.middle-image {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-content: left;
+		align-self: left;
+		margin-left: 0;
+		margin-right: 5%;
+		width: 100%;
+	}
+	.section2{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		margin: 20px;
+		border-bottom: 1px solid black;
+	  }
+	  .section2 .text-container2 {
+		width: 32%;
+		padding: 0 1%;
+		padding-bottom: 20px;  
 	}
 	.section3{
-		margin: 5px;
-		width: 45%;
-		border: solid black;
-		padding: 5px;	
-		}
-		.section4{
-			margin: 5px;
-			width: 45%;	
-			border: solid black;
-			padding: 5px;
-			}
-			.section5{
-				margin: 5px;
-				width: 45%;
-				border: solid black;
-				padding: 5px;	
-				}
-				.section6{
-					margin: 5px;
-					width: 45%;
-					border: solid black;
-					padding: 5px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		margin: 20px;
+	}
+	.section3 .p3{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	footer{
+		display: flex;
+		justify-content: center;
+	}
 						
-
-					}
-					.container3{
-						display: flex;
-						flex-direction: row;
-						flex-wrap: nowrap;
-						justify-content: space-between;
-						margin: 5px;
-					}
-					.section7{
-						margin: 5px;
-						width: 45%;
-						padding: 5px;
-			        }
-					
-					.section8{
-						display: flex;
-						justify-content: flex-end;
-		                margin: 5px;
-						width: 45%;
-						padding: 5px;
-					}
-					footer{
-						display: flex;
-						justify-content: center;
-					}
-					
-						
-					
-
-
-
+	}
