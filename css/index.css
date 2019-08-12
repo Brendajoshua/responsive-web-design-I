@@ -71,8 +71,6 @@ h1, h2, h3, h4, h5 {
 	display: flex;
 	width: 900px;
 	margin: auto;
-	align-items: center;
-	align-content: center;
 	padding: 50px;
 	flex-direction: column;
 	border: 1px solid red;
@@ -82,6 +80,7 @@ h1, h2, h3, h4, h5 {
     display: flex;
     flex-direction: row;
 	width: 100%;
+	justify-content: space-between;
 }
 	
 .navcontainer nav a{
@@ -94,14 +93,9 @@ h1, h2, h3, h4, h5 {
 	padding: 20px 0;
 }
 .image-class {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: left;
-    align-self: left;
-    margin-left: 0;
-    margin-right: 5%;
-    width: 30%;
+	display: flex;
+	align-items: center;
+    width: 25%;
   }
   .nav {
     display: flex;
@@ -109,28 +103,33 @@ h1, h2, h3, h4, h5 {
     justify-content: space-between;
     align-self: right;
     align-items: center;
-    width: calc(100% - 157px);
+    width: 65%;
   }
   .image-container{
 	  display: flex;
-	  flex-wrap: wrap;
 	  flex-direction: row;
-	  justify-content: space-evenly;
+	  justify-content: space-between;
 	  margin: 15px;
+	width: 100%;
 
   }
   
 
-  .heading{
+  .container-text {
 	  display: flex;
+	  flex-direction: column;
 		font-size: 50px;
-		font-style: oblique;
-		justify-content: left;
-		width: 40%;	
+		justify-content: space-evenly;
+		width: 45%;
+		align-items: center;	
   }
-  .top-image{
-	  display: flex;
-	  width: 40%;
+   .button{
+  width: 100px;
+  font-size: 20px;
+  border: 1px solid black;
+}
+  .container-image{
+	  width: 45%;
   }
   
   .section1{
@@ -170,14 +169,13 @@ h1, h2, h3, h4, h5 {
 }
 .section3{
 	display: flex;
-	flex-direction: row;
-    justify-content: flex-start;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
 	margin: 20px;
 }
-.section3 .p3{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+.section3 p {
+	padding-bottom:10px;
 }
 
 footer{
@@ -187,123 +185,3 @@ footer{
 					
 }
 
-@media only screen and (min-width: 600px) {
-	.parent-container{
-		display: flex;
-		width: 900px;
-		margin: auto;
-		align-items: center;
-		align-content: center;
-		padding: 50px;
-		flex-direction: column;
-		border: 1px solid red;
-	}
-	
-	.navcontainer {
-		display: flex;
-		flex-direction: row;
-		width: 100%;
-	}
-		
-	.navcontainer nav a{
-		color: black;
-		text-decoration: none;
-		font-size: 14px;
-		padding: 25px 0;
-	}
-	.navcontainer nav{
-		padding: 20px 0;
-	}
-	.image-class {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		align-content: left;
-		align-self: left;
-		margin-left: 0;
-		margin-right: 5%;
-		width: 30%;
-	  }
-	  .nav {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-self: right;
-		align-items: center;
-		width: calc(100% - 157px);
-	  }
-	  .image-container{
-		  display: flex;
-		  flex-wrap: wrap;
-		  flex-direction: row;
-		  justify-content: space-evenly;
-		  margin: 15px;
-	
-	  }
-	  
-	
-	  .heading{
-		  display: flex;
-			font-size: 50px;
-			font-style: oblique;
-			justify-content: left;
-			width: 40%;	
-	  }
-	  .top-image{
-		  display: flex;
-		  width: 40%;
-	  }
-	  
-	  .section1{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		margin: 20px;
-		border-top: 1px solid black;
-	  }
-	
-	  .section1 .text-container {
-		width: 48%;
-		padding: 0 1%;
-		padding-bottom: 20px;  
-	}
-	.middle-image {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-content: left;
-		align-self: left;
-		margin-left: 0;
-		margin-right: 5%;
-		width: 100%;
-	}
-	.section2{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		margin: 20px;
-		border-bottom: 1px solid black;
-	  }
-	  .section2 .text-container2 {
-		width: 32%;
-		padding: 0 1%;
-		padding-bottom: 20px;  
-	}
-	.section3{
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-		margin: 20px;
-	}
-	.section3 .p3{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-	
-	footer{
-		display: flex;
-		justify-content: center;
-	}
-						
-	}
